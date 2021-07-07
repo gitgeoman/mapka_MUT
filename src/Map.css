@@ -1,0 +1,13 @@
+#map {
+  background-color: lightblue;
+  opacity: 0.85;
+  height: 75vh;
+  width: 97vw;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 22px -5px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 10px 10px 22px -5px rgba(0, 0, 0, 0.52);
+  box-shadow: 10px 10px 22px -5px rgba(0, 0, 0, 0.52);
+}
