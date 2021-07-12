@@ -16,6 +16,7 @@ function Map({ selected, color }) {
 
   // create map
   const mapRef = useRef(null);
+
   useEffect(() => {
     mapRef.current = L.map("map", {
       center: [52.253, 20.9],
@@ -24,13 +25,13 @@ function Map({ selected, color }) {
     });
   }, []);
 
-  //add layer
+  //add next layer to map
   const budynkiLayer = useRef(null); //creating empty layer
   useEffect(() => {
     budynkiLayer.current = L.layerGroup().addTo(mapRef.current);
   }, []);
 
-  //updating data inside new layer
+  //updating data inside the layer
   useEffect(() => {
     budynkiLayer.current.clearLayers();
     L.geoJSON(budynki, {
@@ -62,7 +63,7 @@ function Map({ selected, color }) {
     }).addTo(buildingSelection.current);
   }, [selected, filtered]);
 
-  return <div id="map" />;
+  return <div id="map"></div>;
 }
 
 export default Map;

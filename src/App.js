@@ -1,7 +1,7 @@
 import "./App.css";
 import Map from "./Map";
 import { useState } from "react";
-
+import Legenda from "./Legenda";
 import data from "./dane_";
 
 function App() {
@@ -34,6 +34,8 @@ function App() {
           );
         })}
       </div>
+
+      <Legenda />
       <Map selected={selected} color={color} />
     </div>
   );
