@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Header from "./Header";
 import PureMap from "./Map";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import budynki from "./spatialData/budynki.json";
@@ -8,9 +8,9 @@ import militaryUnits from "./spatialData/MilitaryUnits";
 function App() {
   return (
     <div className="app">
-      <h3>strona główna</h3>
+      <Header />
       <Router>
-        <div>
+        <div className="navbar">
           <nav>
             <ul>
               <li>
